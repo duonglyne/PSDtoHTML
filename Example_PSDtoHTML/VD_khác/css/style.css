@@ -264,6 +264,7 @@
       background-color:var(--text);
   }
   /*css for list images*/
+  
   .images {
       display: flex;
       justify-content: space-between;
