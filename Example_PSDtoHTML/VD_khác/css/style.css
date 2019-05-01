@@ -88,3 +88,322 @@
       right:0;
       font-size: 2rem;
   }
+  /*css cho phần feature*/
+  .feature__header {
+      padding: 11rem 1.5rem 14rem;
+      background-color: var(--bg-light);
+  }
+  .feature__img-top {
+      margin:0 auto 3rem;
+  }
+  .feature__heading {
+      font-size:1.8rem;
+      line-height:1.6;
+      text-transform: uppercase;
+      color: var(--heading);
+      margin-bottom: 2rem;
+      font-weight: bold;
+      text-align: center;
+  }
+.feature__header-desc {
+      font-size:1.8rem;
+      line-height:1.6;
+      color: var(--text);
+      margin: 0 auto;
+      max-width: 106rem;
+      text-align: center;
+  }
+/*CSS for feature list*/
+
+  /*First item*/
+  .feature__item {
+      display: flex;
+
+      flex-flow: row wrap;
+      height: 60rem;
+      overflow: hidden;
+  }
+  .feature__item-img {
+      width: 67%;
+      position: relative;
+  }
+  .feature__item-content {
+      width:33%;
+  }
+  /*item content*/
+  .feature__item .img__big {
+      height: 100%;
+      width:100%;
+      object-fit: cover;
+  }
+  .feature__item .img__brand {
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index:2;
+  }
+  .feature__item-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .feature__item-content-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 7rem;
+      position: relative;
+      background-color: white;
+      height:67%;
+  }
+  .feature__item-content-top:after {
+      content:"";
+      width:2rem;
+      height: 2rem;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left:50%;
+      transform: translate(-50%,50%) rotate(45deg);
+  }
+  .feature__item-text:after {
+      content:"";
+      width:6rem;
+      height:0.3rem;
+      position: absolute;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+      background-color: var(--bg-light);
+  }
+  .feature__item-content-bottom {
+      height:33%;
+  }
+  .feature__item-text {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: var(--text);
+      text-align: justify;
+      position: relative;
+      padding-bottom: 3rem;
+  }
+  .feature__item-content-bottom .img__bg {
+      width:100%;
+      height: 100%;
+  }
+/*css item 2*/
+.feature__item:nth-child(2) .feature__item-img {
+    order:2;
+}
+/*css item 3*/
+  .feature__item:last-child > .feature__item-img {
+      width:33%;
+  }
+  .feature__item:last-child > .feature__item-content {
+      width:34%;
+  }
+  /*css for tweet*/
+  .tweet {
+      padding: 12.5rem 1.5rem 7rem;
+      text-align: center;
+      background-color: var(--bg-light);
+
+  }
+  .tweet__icon {
+      font-size: 4rem;
+      color:#00aefd;
+      margin-bottom: 3rem;
+  }
+  .tweet__heading {
+      font-size:1.8rem;
+      margin-bottom: 2rem;
+  }
+  .tweet__lacation, .tweet__author {
+      color: var(--heading);
+      font-weight: bold;
+  }
+  .tweet__time {
+      color: var(--text);
+      font-weight: 300;
+      padding-left: 1.5rem;
+      margin-left:1.5rem;
+      position: relative;
+  }
+  .tweet__time:before {
+      content:"/";
+      position: absolute;
+      left:0;
+      bottom:0;
+  }
+  .tweet__content {
+      font-size:2.4rem;
+      max-width:104.5rem;
+      margin: 0 auto 10rem;
+      font-style:italic;
+      line-height:1.4;
+      color: var(--text);
+  }
+  /*css for tweet-pagi*/
+  .tweet__pagi {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+  }
+  .tweet__pagi-item {
+      width:1.5rem;
+      height:1.5rem;
+      border-radius: 5rem;
+      border: 1px solid var(--text);
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+  }
+  .is-active {
+      background-color:var(--text);
+  }
+  /*css for list images*/
+  .images {
+      display: flex;
+      justify-content: space-between;
+      height:53.5rem;
+      width:100%;
+      overflow: hidden;
+  }
+  .images__block {
+      width: 33.3333%;
+      height:100%;
+      display:flex;
+  }
+  .images__block:first-child {
+      flex-direction: column;
+  }
+  .images__block-item {
+      height:50%;
+      width:100%;
+  }
+  .images__block-item:first-of-type {
+      display: flex;
+
+  }
+  .images__item {
+      width:50%;
+      height: 100%;
+  }
+  .images__block-item:last-of-type .images__item {
+      width:100%;
+  }
+
+  .images__block:last-child {
+      flex-direction: column-reverse;
+  }
+  /*css for img brand and opacity background*/
+  .images__item {
+      position:relative;
+  }
+  .images__item:before {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color: var(--primary);
+      opacity:0.7;
+      z-index:10;
+      display:none;
+  }
+  .images__item-bg {
+      width:100%;
+      height:100%;
+      object-fit: cover;
+  }
+  .images__item-brand {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index:20;
+      text-align: center;
+      display:none;
+  }
+  .images__item-brand > img {
+      margin: 0 auto;
+  }
+  .images__item-text {
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.6rem;
+      margin-top:0.5rem;
+      font-weight: bold;
+  }
+  .images__item:hover:before,
+  .images__item:hover .images__item-brand {
+      display: block;
+  }
+  /*css for discover*/
+  .discover {
+      width:100%;
+      height: 20rem;
+      text-align:center;
+      background-color: var(--bg-dark);
+  }
+  .discover__btn {
+      color: white;
+      text-transform: uppercase;
+      font-size:1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 2rem 6rem;
+      display:inline-block;
+      margin: 7.5rem auto;
+      background-color: var(--bg-dark);
+      border: 1px solid currentColor;
+      transition: .2s linear;
+  }
+  .discover__btn:hover {
+      background-color: var(--primary);
+      border-color:var(--primary);
+  }
+  /*css for mail form*/
+  .mail {
+      padding:10rem 1.5rem;
+      background-color:white;
+      text-align:center;
+  }
+  .mail__logo {
+      margin: 0 auto 3.5rem;
+  }
+  .mail__text {
+      font-size: 2.4rem;
+      font-style: italic;
+      color: var(--text);
+      margin-bottom:3.5rem;
+      display: inline-block;
+  }
+  .mail__form {
+      display:flex;
+      justify-content: space-between;
+      max-width:54rem;
+      margin: 0 auto;
+  }
+  .mail__form-input {
+      border: 1px solid var(--input-border);
+      color: var(--input-text);
+      padding: 2.5rem;
+      font-style: italic;
+      font-size: 2rem;
+      width: 74%
+  }
+  .mail__form-btn {
+      width:25%;
+      border:0;
+      color: white;
+      background-color: var(--primary);
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-weight: 300;
+  }
+
+
