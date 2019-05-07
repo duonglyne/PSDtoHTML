@@ -1,5 +1,7 @@
 /*CSS for all element of page*/
+* {
 
+}
 /*css for page*/
 
 /*set var for color using in this page*/
@@ -89,6 +91,8 @@
         border-radius: 50px;
         background-color: var(--bg-orange);
         color: #ffffff;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .contact__content {
         margin-top: 110px;
@@ -109,6 +113,7 @@
         background-color: #bbbbbb;
         margin: 0 10px;
         border-radius: 25px;
+        cursor: pointer;
     }
     .contact__icon i:hover {
         background-color: var(--bg-orange);
@@ -122,4 +127,115 @@
     .contact__icon i:nth-child(1),
     .contact__icon i:nth-child(4){
         padding: 10px;
+    }
+    /*CSS for main infor*/
+.main__infor {
+    margin-top: 160px;
+    margin-bottom:200px;
+}
+    .main__infor-picture-big {
+        width: 615px;
+        height: 440px;
+        margin-left: -100px;
+        position: relative;
+        padding:10px;
+        box-shadow: 25px 25px 30px #e3e3e3;
+    }
+    .main__infor-picture-small {
+        width:300px;
+        height: 210px;
+        position: absolute;
+        top: 285px;
+        left: 270px;
+        z-index: 2;
+        padding:6px;
+        box-shadow: 17px 17px 20px #e3e3e3;
+    }
+    .main__infor-about-us {
+        box-sizing: border-box;
+        width: 600px;
+        margin-top: 40px;
+        margin-left: 45px;
+    }
+    .main__infor-slogan {
+        font-size: 45px;
+        width: 320px;
+    }
+    .main__infor-list {
+        display: flex;
+        margin-bottom: 0;
+    }
+    .main__infor-item {
+        margin: 30px 80px 10px 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--bg-orange);
+    }
+    .main__infor-text {
+        width: 100%;
+        font-size: 15px;
+    }
+    .submit__infor {
+        margin-top:60px;
+    }
+     /*css for main work*/
+    .main__work-title {
+        font-size: 45px;
+    }
+    .main__work-box {
+        margin-top: 50px;
+        margin-bottom: 120px;
+        width: 355px;
+        height: 375px;
+        padding: 50px 40px;
+    }
+    .main__work-icon,
+    .main__work-name {
+        text-align: center;
+    }
+    .main__work-icon {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .main__work-name {
+        margin-top: 35px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .main__work-text {
+        text-align: justify;
+        text-align-last: center;
+        font-size: 15px;
+        color: #888888;
+    }
+    .main__work-box:hover {
+        box-shadow: 35px 31px 30px #e3e3e391;
+    }
+    .main__work-box:hover .main__work-icon i {
+        color: var(--bg-orange);
+    }
+
+    /*css for main place*/
+    .place__title {
+        margin: 0 auto;
+        width: 870px;
+    }
+    .place__heading {
+        text-align: center;
+        font-size: 45px;
+    }
+    .place__text {
+        margin-top: 45px;
+        margin-bottom: 50px;
+        text-align: justify;
+        text-align-last: center;
+        font-size: 15px;
+        color: #888888;
+    }
+    .main__place-map {
+        width: 100%;
+        height:635px;
+        background: url("../img/map_02.png") top center no-repeat;
+       
     }
